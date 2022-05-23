@@ -26,7 +26,7 @@ define Package/iproute-mptcp
   SECTION:=net
   CATEGORY:=Network
   SUBMENU:=Routing and Redirection
-  DEPENDS:=+libselinux +libmnl +libelf
+  DEPENDS:=+libcap +libselinux +libmnl +libelf
   ALTERNATIVES:=400:/sbin/ip:/usr/libexec/iproute-mptcp
 endef
 
